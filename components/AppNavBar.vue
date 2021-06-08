@@ -13,13 +13,13 @@
       <v-icon>mdi-chevron-left</v-icon>
     </v-btn-tooltip>
 
-    <v-menu offset-y>
+    <v-menu ref="menu" v-model="menu" offset-y :close-on-content-click="false">
       <template #activator="{ on, attrs }">
         <v-btn text v-bind="attrs" v-on="on">
           <v-toolbar-title>{{ label }}</v-toolbar-title>
         </v-btn>
       </template>
-      <v-date-picker v-model="date" @click:date="computeWeek" />
+      <v-date-picker v-model="date" style="min-width: inherit" @click:date="computeWeek" @change="save" />
     </v-menu>
 
     <v-btn-tooltip icon tooltip="Next Week" @click="$emit('next-week')">
@@ -46,7 +46,8 @@ export default {
   },
   data() {
     return {
-      date: moment().toISOString(true).substr(0, 10)
+      date: moment().toISOString(true).substr(0, 10),
+      menu: false
     }
   },
 
@@ -91,6 +92,9 @@ export default {
       let diffWeek = (diffDay / 7)
       this.$emit('change-week', diffWeek)
       // this works, idk how, but im not coplaining
+    },
+    save(date) {
+      this.$refs.menu.save(date)
     }
   }
 
