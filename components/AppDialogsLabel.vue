@@ -8,18 +8,19 @@
           <v-list class="pa-0">
             <v-card>
               <v-list-item>
-                <v-row>
-                  <v-col cols="6">
+                <v-row class="pa-0 ma-0">
+                  <v-col cols="6" class="py-0">
                     <v-select
                       v-model="select" :items="items" item-text="courseName" item-value="id" label="Subject"
                       return-object
                     />
                   </v-col>
-                  <v-col cols="6">
+                  <v-col cols="6" class="py-0">
                     <v-text-field
                       v-model="select.name"
+                      autofocus
+                      autocomplete="off"
                       label="Label"
-
                       counter="10"
                       append-outer-icon="mdi-plus"
                       @click:append-outer="addLabel"
@@ -33,16 +34,14 @@
                            :item="item"
                            :index="index"
               >
-                <v-row>
-                  <v-col cols="6">
+                <v-row class="pa-0 ma-0">
+                  <v-col cols="6" class="py-0">
                     <v-text-field v-model="item.courseName" readonly />
                   </v-col>
-                  <v-col cols="6">
+                  <v-col cols="6" class="py-0">
                     <v-text-field
                       label="Label"
                       :value="item.name"
-                      counter="10"
-
                       append-outer-icon="mdi-delete"
                       @click:append-outer="deleteDialogLabel(item,index)"
                     />
