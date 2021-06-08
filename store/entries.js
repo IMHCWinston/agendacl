@@ -45,13 +45,11 @@ export const actions = {
   },
   async updateLabel(state, labels) {
     if (await this.$axios.$post('api/update-labels', labels)) {
-      console.log('updated')
       state.commit('getLabels', labels)
       return true
     } else { return false }
   },
   async deleteLabel(state, labels) {
-    console.log(labels)
     await this.$axios.$post('api/delete-labels', labels[0])
     state.commit('deleteLabel', labels[1])
     return true

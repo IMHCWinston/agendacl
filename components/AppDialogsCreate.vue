@@ -6,7 +6,7 @@
       <v-card-text>
         <v-form>
           <v-text-field label="Title" />
-          <v-select v-model="label" :items="labels" item-text="name" item-value="id" label="Label" />
+          <v-select v-model="label" :items="labels" item-text="name" item-value="id" label="Label" :disabled="labelSelectDisabled" />
           <v-textarea label="Description" rows="2" no-resize />
           <v-row>
             <v-col cols="6">
@@ -51,13 +51,19 @@ export default {
       dateNow: moment().toISOString(true).substr(0, 10),
       time: '',
       menuDisplay: false,
-      label: { id: 0, courseName: 'None' }
+      label: { id: 0, name: 'None' }
 
     }
   },
   computed: {
     labels() {
       return this.$store.state.entries.labels
+    },
+    labelSelectDisabled() {
+      if (this.labels.length === 0) {
+        return true
+      }
+      return false
     }
   },
   methods: {

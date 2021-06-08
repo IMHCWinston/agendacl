@@ -12,7 +12,7 @@
             <v-col cols="6">
               <v-menu>
                 <template #activator="{ on, attrs }">
-                  <v-text-field v-model="date" autocomplete="false" readonly :disabled="task.isClassroomCourseWork" v-bind="attrs" label="Due Date" v-on="on" />
+                  <v-text-field v-model="date" autocomplete="false" readonly :disabled="labelSelectDisabled" v-bind="attrs" label="Due Date" v-on="on" />
                 </template>
 
                 <v-date-picker v-model="date" :min="dateNow" />
@@ -51,7 +51,6 @@ export default {
 
   data() {
     return {
-
       title: this.task.title,
       description: this.task.description,
       date: this.task.hasDueDate ? moment(this.task.dueDate).toISOString(true).substr(0, 10) : '',
@@ -59,13 +58,19 @@ export default {
       time: this.task.hasDueTime ? moment(this.task.dueDate).toISOString(true).substr(11, 5) : '',
 
       menuDisplay: false,
-      label: { id: 0, courseName: 'None' }
+      label: { id: 0, name: 'None' }
 
     }
   },
   computed: {
     labels() {
       return this.$store.state.entries.labels
+    },
+    labelSelectDisabled() {
+      if (this.labels.length === 0 || this.task.isClassroomCourseWork) {
+        return true
+      }
+      return false
     }
   },
   created() {
