@@ -1,7 +1,7 @@
 interface AgendaTask {
-  id    : string|undefined, //set ID to undefined if task is new, prisma will set the id
+  id?    : string, //set ID to undefined if task is new, prisma will set the id
   title : string,
-  label?: AgendaLabel,
+  labelId?: string, //defined by client
   description: string, //user description, if empty set to ""
   dateCreated: string,
   dueDate?: string, //dueDate is set to an ISO String, input in new Date(string) to get date object

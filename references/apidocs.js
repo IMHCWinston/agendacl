@@ -103,7 +103,7 @@ export default [
     type: 'post',
     description: 'Updates Labels if label id is defined, Returns AgendaLabels with defined IDs',
     'required-input-type': 'AgendaLabel[]',
-    'returned-datatype': 'none' 
+    'returned-datatype': 'none'
   },
   {
     name: 'Delete Labels',
@@ -114,49 +114,3 @@ export default [
     'returned-datatype': ''
   }
 ]
-
-export const sampleLabel = {
-  id: 'ckp13sh6m0000d4veyhozusgb',
-  name: 'myLabel',
-  isGCLabel: false
-}
-
-export const sampleGCLabel = {
-  id: 'ckp13sh6n0001d4veu3apsg5i',
-  name: 'myGCLabel',
-  isGCLabel: true,
-  courseId: '1234',
-  courseName: 'SDD Y12'
-}
-
-export const SampleTask = { //sample normal task
-  id: 'cko4quacx00016svedhla0ybm',
-  title: 'PPP',
-  label: sampleLabel,
-  description: 'WOW', //user description, if empty set to ""
-  dateCreated: '2011-10-05T14:48:00.000Z',
-  hasDueTime: false,
-  hasDueDate: false,
-  isCompleted: false,
-  isDeleted: false,
-  isClassroomCourseWork: false
-}
-
-export const SampleGCTask = { //sample normal task
-  id: 'ckokdc1ex0002dkvehrgmks4s',
-  title: 'SDD Assignment',
-  label: sampleGCLabel,
-  description: 'some user defined description',
-  dueDate: '2011-10-05T14:48:00.000Z',
-  dateCreated: '2011-10-05T14:48:00.000Z',
-  hasDueTime: true,
-  hasDueDate: true,
-  isCompleted: false,
-  isDeleted: false,
-  isClassroomCourseWork: true,
-  courseWorkLink: 'classtoom.google.com/......',
-  courseWorkId: '123456',
-  courseWorkTitle: 'SDD Assignment',
-  courseWorkDescription: 'my description nonono',
-  courseId: '888889'
-}
