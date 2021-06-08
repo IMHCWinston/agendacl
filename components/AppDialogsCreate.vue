@@ -47,6 +47,7 @@ export default {
   data() {
     return {
       title: '',
+      description: '',
       date: moment().toISOString(true).substr(0, 10),
       dateNow: moment().toISOString(true).substr(0, 10),
       time: '',
