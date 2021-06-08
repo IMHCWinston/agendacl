@@ -202,23 +202,6 @@ function convertToAgendaTasks(tasks) {
 function convertToAgendaLabels(labels) {
     return labels.map(label => { return _.omit(_.omitBy(label, _.isNull), ['userId']); });
 }
-function convertPrismaConnects(task) {
-    let connects = _.pickBy(task, _.isPlainObject);
-    for (const i in connects) {
-        connects[i] = { connect: { id: connects[i].id } };
-    }
-    return _.assign(task, connects);
-}
-function writeFile(dest, content) {
-    return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
-        fs_1.default.writeFile(dest, content.toString(), err => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-        });
-    }));
-}
 //prisma methods
 function createUser(userId) {
     return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
@@ -334,10 +317,9 @@ function updateAgendaTasks(tasks) {
             if (task.id === undefined) {
                 throw new Error("Task IDs must be defined");
             }
-            let prismaTask = convertPrismaConnects(task);
             transactionsUpdateArr.push(prisma.task.update({
                 where: { id: task.id },
-                data: prismaTask
+                data: task
             }));
         }
         yield prisma.$transaction(transactionsUpdateArr).catch((err) => { rej(err); });

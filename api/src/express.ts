@@ -220,25 +220,6 @@ function convertToAgendaLabels(labels: Label[]) {
   return labels.map(label => { return _.omit(_.omitBy(label, _.isNull), ['userId']) }) as unknown as AgendaLabel[] 
 }
 
-function convertPrismaConnects(task: AgendaTask) {
-  let connects = _.pickBy(task, _.isPlainObject)
-  for (const i in connects) {
-    connects[i] = {connect: {id: connects[i].id}}
-  }
-  return _.assign(task, connects) as unknown as Prisma.TaskUpdateInput
-}
-
-function writeFile(dest: string, content:any) {
-  return new Promise<void>(async (res, rej) => {
-    fs.writeFile(dest, content.toString(), err => {
-      if (err) {
-        console.error(err)
-        return
-      }
-    })
-  })
-}
-
 //prisma methods
 function createUser(userId: string) {
   return new Promise<void>(async (res, rej) => {
@@ -361,10 +342,9 @@ function updateAgendaTasks( tasks: AgendaTask[]){ //don't use this to update lab
       if (task.id === undefined) {
         throw new Error("Task IDs must be defined");
       }
-      let prismaTask = convertPrismaConnects(task)
      transactionsUpdateArr.push(prisma.task.update({
        where: {id: task.id},
-       data: prismaTask
+       data: task
      })) 
     }
    await prisma.$transaction(transactionsUpdateArr).catch((err) => {rej(err)});
