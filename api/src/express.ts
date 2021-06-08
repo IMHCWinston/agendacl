@@ -334,13 +334,6 @@ function retrieveAgendaTasks(userId: string) {
   })
 }
 
-(async () => {
-  console.log("COOL");
-  
-  await writeFile('./test.txt', await retrieveAgendaTasks('104392824318813973075'));
-})()
-
-
 function createAgendaTasks(userId: string, tasks: AgendaTask[]) {
   return new Promise<AgendaTask[]>(async (res, rej) => {
     let transactionsCreateArr  = [];
