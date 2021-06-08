@@ -1,14 +1,14 @@
 <template>
   <v-expansion-panel v-show="task.isDeleted === false">
     <v-expansion-panel-header class="py-1">
-      <v-list class="ma-0 pa-0">
+      <v-list class="ma-0 pa-0" max-width="90%">
         <v-list-item class="ma-0 pa-0">
           <v-list-item-content>
             <v-list-item-subtitle :class="listItemTitleProp">
               {{ label }}
             </v-list-item-subtitle>
             <v-list-item-title class="body-2" :class="listItemTitleProp">
-              <div class="text-truncate" style="width:90%">
+              <div class="text-truncate">
                 {{ task.title }}
               </div>
             </v-list-item-title>
