@@ -69,6 +69,7 @@ export default {
 
     ...mapActions('entries', ['createTask']),
     async submit() {
+      this.$emit('close-create-dialog')
       let newTask = { //sample normal task
         id: undefined,
         title: this.title,
@@ -90,12 +91,10 @@ export default {
 
       if (this.time !== '') {
         newTask.hasDueTime = true
-        newTask.dueDate = moment(this.dateStr + ' ' + moment().toISOString(true).substr(11, 5)).toISOString(true)
+        newTask.dueDate = moment(this.dateStr + ' ' + this.time).toISOString(true)
       }
       console.log(newTask)
       await this.createTask(newTask)
-
-      this.$emit("close-create-dialog")
     }
   }
 }

@@ -54,9 +54,9 @@ export default {
 
       title: this.task.title,
       description: this.task.description,
-      date: this.task.hasDueDate ? moment(this.task.dueDate).toISOString(true).substr(0, 10) : undefined,
+      date: this.task.hasDueDate ? moment(this.task.dueDate).toISOString(true).substr(0, 10) : '',
       dateNow: moment().toISOString(true).substr(0, 10),
-      time: this.task.hasDueTime ? moment(this.task.dueDate).toISOString(true).substr(11, 5) : undefined,
+      time: this.task.hasDueTime ? moment(this.task.dueDate).toISOString(true).substr(11, 5) : '',
 
       menuDisplay: false,
       label: { id: 0, courseName: 'None' }
@@ -87,7 +87,7 @@ export default {
       newTask.description = this.description
       newTask.dueDate = moment(this.date).toISOString(true)
 
-      if (this.time) {
+      if (this.time !== '') {
         newTask.hasDueTime = true
         newTask.dueDate = moment(this.date + ' ' + this.time).toISOString(true)
       }
