@@ -20,6 +20,7 @@
 </template>
 
 <script>
+//Hello! :P
 import moment from 'moment'
 import { mapActions } from 'vuex'
 
@@ -101,11 +102,6 @@ export default {
   }
 
 };
-
-/*
-THINGS TO DO
-5. Add Tooltips
-*/
 
 </script>
 
