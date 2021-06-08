@@ -5,9 +5,9 @@
       <v-divider />
       <v-card-text>
         <v-form>
-          <v-text-field label="Title" />
+          <v-text-field v-model="title" label="Title" />
           <v-select v-model="label" :items="labels" item-text="name" item-value="id" label="Label" :disabled="labelSelectDisabled" />
-          <v-textarea label="Description" rows="2" no-resize />
+          <v-textarea v-model="description" label="Description" rows="2" no-resize />
           <v-row>
             <v-col cols="6">
               <v-menu>
@@ -47,6 +47,7 @@ export default {
   data() {
     return {
       title: '',
+      description: '',
       date: moment().toISOString(true).substr(0, 10),
       dateNow: moment().toISOString(true).substr(0, 10),
       time: '',
@@ -70,13 +71,11 @@ export default {
 
     ...mapActions('entries', ['createTask']),
     async submit() {
-      this.$emit('closeEditDialog')
-
+      this.$emit('input', false);
       let newTask = { //sample normal task
         id: undefined,
         title: this.title,
         labelId: undefined,
-
         description: this.description, //user description, if empty set to ""
         dueDate: moment(this.date).toISOString(true),
         dateCreated: moment().toISOString(true),
