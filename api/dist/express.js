@@ -310,10 +310,6 @@ function retrieveAgendaTasks(userId) {
         }
     }));
 }
-(() => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("COOL");
-    yield writeFile('./test.txt', yield retrieveAgendaTasks('104392824318813973075'));
-}))();
 function createAgendaTasks(userId, tasks) {
     return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
         let transactionsCreateArr = [];
