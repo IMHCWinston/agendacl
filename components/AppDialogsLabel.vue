@@ -35,7 +35,7 @@
               >
                 <v-row>
                   <v-col cols="6">
-                    <v-select :items="[item]" item-text="name" item-value="id" :label="item.courseName" disabled />
+                    <v-text-field v-model="item.courseName" readonly />
                   </v-col>
                   <v-col cols="6">
                     <v-text-field
