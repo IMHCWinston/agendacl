@@ -577,7 +577,6 @@ app.post('/delete-tasks', ash(async(req, res)=> {
   res.send("Sucess!");
 }))
 
-
 app.get('/list-courses',ash(async(req, res) => { 
   if (!res.locals.auth){
     throw new Error("User has not yet logged in!");
@@ -585,7 +584,6 @@ app.get('/list-courses',ash(async(req, res) => {
   res.send(await listGCCourses(res.locals.auth));
 }))
 
-//NOT TESTED YET
 app.get('/retrieve-labels', ash(async (req, res)=> {
   if (!res.locals.auth){
     throw new Error("User has not yet logged in!");

@@ -531,7 +531,6 @@ app.get('/list-courses', express_async_handler_1.default((req, res) => __awaiter
     }
     res.send(yield listGCCourses(res.locals.auth));
 })));
-//NOT TESTED YET
 app.get('/retrieve-labels', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     if (!res.locals.auth) {
         throw new Error("User has not yet logged in!");
