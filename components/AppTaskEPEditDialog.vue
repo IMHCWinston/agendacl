@@ -6,13 +6,13 @@
       <v-card-text>
         <v-form>
           <v-text-field v-model="title" label="Title" :value="title" />
-          <v-select v-model="label" :items="labels" :disabled="task.isClassroomCourseWork" item-text="name" item-value="id" label="Label" />
+          <v-select v-model="label" :items="labels" :disabled="labelSelectDisabled" item-text="name" item-value="id" label="Label" />
           <v-textarea v-model="description" label="Description" rows="2" :value="description" no-resize />
           <v-row>
             <v-col cols="6">
               <v-menu>
                 <template #activator="{ on, attrs }">
-                  <v-text-field v-model="date" autocomplete="false" readonly :disabled="labelSelectDisabled" v-bind="attrs" label="Due Date" v-on="on" />
+                  <v-text-field v-model="date" autocomplete="false" readonly :disabled="task.isClassroomCourseWork" v-bind="attrs" label="Due Date" v-on="on" />
                 </template>
 
                 <v-date-picker v-model="date" :min="dateNow" />
