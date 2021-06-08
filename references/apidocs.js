@@ -1,10 +1,5 @@
 //API Documentation
 //Check dts-apidocs.d.ts for the AgendaTask type
-/*
-IMPORTANT NOTES:
-
-Don't update labels via the update tasks method (probably won't work)
-*/
 
 export default [
   {
