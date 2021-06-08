@@ -94,6 +94,8 @@ export default {
       }
       console.log(newTask)
       await this.createTask(newTask)
+
+      this.$emit("close-create-dialog")
     }
   }
 }
