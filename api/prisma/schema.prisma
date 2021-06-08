@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+model User {a
+  id        String     @id
+  tasks     Task[]
+  labels    Label[]
+}
+
+model Task {
+  id       String     @id @default(cuid())
+  user     User       @relation(fields: [userId], references: [id])
+  userId   String
+  title    String
+  label    Label?    @relation(fields: [labelId], references: [id])
+  labelId  String?
+  description String
+  dueDate String?
+  dateCreated String
+  hasDueTime Boolean
+  hasDueDate Boolean
+  isCompleted Boolean
+  isDeleted Boolean
+  isClassroomCourseWork Boolean
+  courseWorkLink String?
+  courseWorkId String? 
+  courseWorkTitle String?
+  courseWorkDescription String?
+  courseId String?
+}
+
+model Label {
+  id String @id @default(cuid())
+  name String
+  user User @relation(fields: [userId], references: [id])
+  tasks Task[]
+  userId   String
+  isGCLabel Boolean
+  courseId String? 
+  courseName String?
+}
