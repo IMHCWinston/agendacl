@@ -12,10 +12,10 @@
                 {{ task.title }}
               </div>
             </v-list-item-title>
-
-            <v-list-item-subtitle :class="listItemTitleProp">
-              {{ dueTime }}
-              <!-- IF Not GC Assignment Remove use v-if-->
+            <v-list-item-subtitle>
+              <span :class="listItemTitleProp">
+                {{ dueTime }}
+              </span>
               <v-btn-tooltip v-if="task.isClassroomCourseWork" tooltip="See GC Assignment" icon x-small :target="targetRedirect" :href="task.courseWorkLink" class-btn="ml-1 " @click.stop>
                 <v-icon>mdi-google-classroom</v-icon>
               </v-btn-tooltip>
