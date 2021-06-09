@@ -33,8 +33,8 @@
         <div class="hero-content">
           <div class="hero-block">
             <div class="content-block-hero">
-              <h1 style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading">No more missing assignments and hidden due dates</h1>
-              <p style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph-hero">
+              <h1 class="heading">No more missing assignments and hidden due dates</h1>
+              <p class="paragraph-hero">
                 No more lateness. No more &quot;I forgot&quot;.
                 <br>Set your schedule, free your mind.
                 <br>Introducing:
@@ -43,13 +43,13 @@
                 <strong>S</strong>chedule
                 <strong>M</strong>anager.
               </p>
-              <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero">
+              <div class="button-wrap-hero">
                 <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="button w-button">Log in now</a>
                 <a href="#" class="link">Or see how you can use it</a>
               </div>
             </div>
           </div>
-          <div style="-webkit-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-image-wrap">
+          <div class="hero-image-wrap">
             <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg" sizes="(max-width: 479px) 90vw, (max-width: 767px) 86vw, (max-width: 991px) 88vw, 41vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg 2000w" alt="" class="hero-image">
           </div>
         </div>
@@ -502,26 +502,14 @@
         </div>
       </div>
     </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60bdafd24f62e8078ac977ef" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer />
+    <script src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/js/webflow.df1ffdce4.js" type="text/javascript" defer />
   </div>
 </template>
 
 <script>
 export default {
-  head() {
-    return {
-      script: [
 
-        { src: 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60bdafd24f62e8078ac977ef' },
-        { src: 'https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/js/webflow.df1ffdce4.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js' },
-        { src: 'https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js' }
-
-      ]
-    }
-  },
-  mounted() {
-    !(function(o, c) { let n = c.documentElement; let t = ' w-mod-'; n.className += t + 'js', ('ontouchstart' in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + 'touch') }(window, document));
-  }
 }
 </script>
 

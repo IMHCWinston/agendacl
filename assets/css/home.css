@@ -2195,3 +2195,17 @@
      font-style: normal;
      font-display: auto;
    }
+   
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track { 
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484dff; 
+  border-radius: 0px;
+}
