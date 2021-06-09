@@ -40,8 +40,8 @@
                   </v-col>
                   <v-col cols="6" class="py-0">
                     <v-text-field
+                      v-model="item.name"
                       label="Label"
-                      :value="item.name"
                       append-outer-icon="mdi-delete"
                       @click:append-outer="deleteDialogLabel(item,index)"
                     />
@@ -131,6 +131,7 @@ export default {
       await this.deleteLabel([[label], index])
     },
     async onDialogExit() {
+      console.log(this.labels)
       await this.updateLabel(this.labels)
       this.select = { id: undefined, name: '', isGCLabel: false, courseName: 'Custom Label' }
       this.$emit('input', this.$event);
