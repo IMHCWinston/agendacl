@@ -66,12 +66,13 @@ function init() {
 return new Promise<{GURL: string, auth: Auth.OAuth2Client}>(async (res, rej) => {
   fs.readFile('api/credentials.json', async (err, content) => {
     if (err) return console.error('Error loading client secret file:', err);
+    const uriIndex = process.env.NODE_ENV == 'production' ? 2 : 1;
     let credentials = JSON.parse(content.toString());
     const {client_secret, client_id, redirect_uris } = credentials.web;
     const oauth2Client = new google.auth.OAuth2(
       client_id,
       client_secret,
-      redirect_uris[1]
+      redirect_uris[uriIndex]
   );
   const url = oauth2Client.generateAuthUrl({
     // 'online' (default) or 'offline' (gets refresh_token)

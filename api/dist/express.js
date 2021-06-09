@@ -61,9 +61,10 @@ function init() {
         fs_1.default.readFile('api/credentials.json', (err, content) => __awaiter(this, void 0, void 0, function* () {
             if (err)
                 return console.error('Error loading client secret file:', err);
+            const uriIndex = process.env.NODE_ENV == 'production' ? 2 : 1;
             let credentials = JSON.parse(content.toString());
             const { client_secret, client_id, redirect_uris } = credentials.web;
-            const oauth2Client = new googleapis_1.google.auth.OAuth2(client_id, client_secret, redirect_uris[1]);
+            const oauth2Client = new googleapis_1.google.auth.OAuth2(client_id, client_secret, redirect_uris[uriIndex]);
             const url = oauth2Client.generateAuthUrl({
                 // 'online' (default) or 'offline' (gets refresh_token)
                 access_type: 'offline',
