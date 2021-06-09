@@ -7,11 +7,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "migrate": "prisma migrate dev --schema=\"api/prisma/schema.prisma\"",
-    "generate": "nuxt generate",
+    "generate": "prisma generate --schema=\"api/prisma/schema.prisma\"",
     "deploy": "prisma migrate deploy --schema=\"api/prisma/schema.prisma\"",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "heroku-postbuild": "npm run deploy & npm run build "
+    "heroku-postbuild": "npm run deploy & npm run generate & npm run build "
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
