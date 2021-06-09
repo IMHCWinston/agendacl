@@ -1,6 +1,4 @@
 <template>
-  <!-- This site was created in Webflow. http://www.webflow.com -->
-  <!-- Last Published: Wed Jun 09 2021 11:32:48 GMT+0000 (Coordinated Universal Time) -->
   <html data-wf-domain="landing-page-d4c502.webflow.io" data-wf-page="60bdafd24f62e88953c977f4" data-wf-site="60bdafd24f62e8078ac977ef" data-wf-status="1">
     <head>
       <meta charset="utf-8">
