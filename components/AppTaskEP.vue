@@ -42,7 +42,7 @@
       </p>
       <v-row no-gutters>
         <v-col class="text-truncate py-0 pl-0 " cols="10" style="user-select: none; cursor: pointer" @click="showDescDialog=true">
-          {{ task.description }} {{ task.isClassroomCourseWork ? task.courseWorkDescription : '' }}
+          {{ task.description ? task.description : task.isClassroomCourseWork ? task.courseWorkDescription : '' }}
         </v-col>
         <v-col cols="1">
           <v-btn-tooltip tooltip="Edit" icon small class-btn="col-1" @click="editBtnClick">
