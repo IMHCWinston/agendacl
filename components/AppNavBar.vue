@@ -50,6 +50,7 @@ export default {
     return {
       date: moment().toISOString(true).substr(0, 10),
       menu: false
+
     }
   },
 
@@ -85,7 +86,7 @@ export default {
       return moment();
     },
     async redirect() {
-      window.location.href = this.url;
+      this.$nuxt.$router.replace('/');
       await this.$axios.$post('api/sign-out')
     },
     computeWeek() {
