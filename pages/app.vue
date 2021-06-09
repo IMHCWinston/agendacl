@@ -63,7 +63,7 @@ export default {
       await this.getLabels()
       await this.getTasksL()
     } else {
-      this.$nuxt.$router.replace('/home')
+      this.$nuxt.$router.replace('/')
     }
 
     // Initializing the dates
