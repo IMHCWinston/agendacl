@@ -42,7 +42,6 @@ const _ = __importStar(require("lodash"));
 const express_async_handler_1 = __importDefault(require("express-async-handler"));
 const moment_1 = __importDefault(require("moment"));
 const prisma = new client_1.PrismaClient();
-// const PORT = process.env.PORT || 3000;
 const scopes = [
     'https://www.googleapis.com/auth/classroom.courses.readonly',
     'https://www.googleapis.com/auth/classroom.coursework.me.readonly',
@@ -368,7 +367,7 @@ function createAgendaLabels(userId, labels) {
                 throw new Error("Label IDs must be undefined");
             }
             transactionsCreateArr.push(prisma.label.create({
-                data: Object.assign(Object.assign({}, label), { userId }) //just to be safe don't include label when creating agenda task
+                data: Object.assign(Object.assign({}, label), { userId })
             }));
         }
         let newLabels = yield prisma.$transaction(transactionsCreateArr).catch((err) => { rej(err); });
@@ -443,7 +442,7 @@ app.post('/sign-out', express_async_handler_1.default((req, res) => __awaiter(vo
     res.status(200).send("Sucess!");
 })));
 app.get('/has-signed-in', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    if (!res.locals.auth || !res.locals.userId) { //no cookies
+    if (!res.locals.auth || !res.locals.userId) { //if no cookies
         res.send(false);
         return;
     }

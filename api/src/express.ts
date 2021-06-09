@@ -11,8 +11,6 @@ import { NextFunction, Request, Response} from 'express';
 import moment from 'moment';
 const prisma = new PrismaClient();
 
-
-// const PORT = process.env.PORT || 3000;
 const scopes = [
   'https://www.googleapis.com/auth/classroom.courses.readonly',
   'https://www.googleapis.com/auth/classroom.coursework.me.readonly',
@@ -271,7 +269,7 @@ function storeGCTasks(userId: string, classroomTasks: AgendaTask[]){//return tas
             courseWorkId: courseWork.courseWorkId
         }]},
         data: {
-          hasDueDate: courseWork.hasDueDate, //Due Date Also can't be changed!
+          hasDueDate: courseWork.hasDueDate, 
           hasDueTime: courseWork.hasDueTime,
           courseWorkLink: courseWork.courseWorkLink,
           courseWorkTitle: courseWork.courseWorkTitle,
@@ -336,7 +334,7 @@ function createAgendaTasks(userId: string, tasks: AgendaTask[]) {
 }
 
 
-function updateAgendaTasks( tasks: AgendaTask[]){ //don't use this to update labels
+function updateAgendaTasks( tasks: AgendaTask[]){ 
   return new Promise<void>(async (res, rej) => {
     let transactionsUpdateArr = [];
     for (let task of tasks) {
@@ -397,7 +395,7 @@ function createAgendaLabels(userId: string, labels: AgendaLabel[]) {
         throw new Error("Label IDs must be undefined");
       }
      transactionsCreateArr.push(prisma.label.create({
-       data : {...label, userId} //just to be safe don't include label when creating agenda task
+       data : {...label, userId} 
      })) 
     }
    let newLabels = await prisma.$transaction(transactionsCreateArr).catch((err) => {rej(err)});
@@ -468,7 +466,7 @@ app.get('/google-url',(req, res) => {
   res.send(GoogleRedirectURL);
 })
 
-app.get('/oauth2callback', ash(async (req, res) => { //not part of api listens to google redirect uri
+app.get('/oauth2callback', ash(async (req, res) => { //not part of api
   let {userId, refreshToken} = await retrieveToken(req.query.code as string);
   await createUser(userId);
   res.cookie('userId',userId, {maxAge: 999*999*999*999,signed: true,httpOnly: true, secure: true});
@@ -483,7 +481,7 @@ app.post('/sign-out', ash(async (req, res) => {
 }))
 
 app.get('/has-signed-in',ash(async (req,res) => {
-  if (!res.locals.auth || !res.locals.userId){ //no cookies
+  if (!res.locals.auth || !res.locals.userId){ //if no cookies
     res.send(false);
     return;
   }  
