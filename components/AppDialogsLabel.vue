@@ -100,8 +100,8 @@ export default {
     }
     this.items = GCLabels
     this.labels = []
-    for (label of labels) {
-      this.labels.push(Object.assign({}, label))
+    for (let obj of this.label) {
+      this.labels.push(Object.assign({}, obj))
     }
   },
   methods: {
