@@ -44,7 +44,7 @@ interface AgendaTaskWLabel extends AgendaTask {
 
 interface AgendaLabel {
   id: string|undefined
-  title: string
+  name: string
   isGCLabel: boolean
   courseId?: string
   courseName?: string
