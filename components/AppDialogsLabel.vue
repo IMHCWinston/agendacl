@@ -90,6 +90,7 @@ export default {
 
   async created() {
     let GCLabels = await this.getGCLabels()
+    console.log(GCLabels)
     let labels = this.$store.state.entries.labels
     for (let i = 1; i < labels.length; i++) {
       let index = GCLabels.findIndex(function(o) {
