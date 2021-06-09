@@ -9,7 +9,7 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
-model User {a
+model User {
   id        String     @id
   tasks     Task[]
   labels    Label[]
@@ -39,7 +39,7 @@ model Task {
 
 model Label {
   id String @id @default(cuid())
-  name String
+  title String
   user User @relation(fields: [userId], references: [id])
   tasks Task[]
   userId   String
