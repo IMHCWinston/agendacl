@@ -205,7 +205,7 @@
             Schedule like never before
             <span class="text-span" />
           </h3>
-          <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero">
+          <div class="button-wrap-hero">
             <a href="#" class="button w-button">Log in now!</a>
             <a href="#" class="link-02">See our Process</a>
           </div>
