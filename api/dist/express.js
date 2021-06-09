@@ -71,6 +71,8 @@ function init() {
                 // If you only need one scope you can pass it as a string
                 scope: scopes
             });
+            console.log("HI");
+            console.log(url);
             res({ GURL: url, auth: oauth2Client });
         }));
     }));

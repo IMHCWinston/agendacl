@@ -511,7 +511,7 @@ export default {
     return { url } //url is appended to vue data property
   },
   mounted() {
-    window.alert(this.hello);
+    window.alert(this.url);
   }
 }
 
