@@ -99,7 +99,10 @@ export default {
       GCLabels.splice(index, 1);
     }
     this.items = GCLabels
-    this.labels = Array.from(labels)
+    this.labels = []
+    for (label of labels) {
+      this.labels.push(Object.assign({}, label))
+    }
   },
   methods: {
     ...mapActions('entries', ['createLabel', 'updateLabel', 'deleteLabel']),
