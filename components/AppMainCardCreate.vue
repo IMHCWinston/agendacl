@@ -6,7 +6,7 @@
       <v-card-text>
         <v-form>
           <v-text-field v-model="title" label="Title" />
-          <v-select v-model="label" :items="labels" item-text="name" item-value="id" label="Label" />
+          <v-select v-model="label" :items="labels" return-object item-text="name" item-value="id" label="Label" />
           <v-textarea v-model="description" label="Description" rows="2" no-resize />
           <v-row>
             <v-col cols="6">
@@ -86,7 +86,7 @@ export default {
       }
 
       if (this.label.id !== 0) {
-        newTask.labelId = this.label
+        newTask.labelId = this.label.id
       }
 
       if (this.time !== '') {
@@ -97,6 +97,7 @@ export default {
       await this.createTask(newTask)
       this.$emit('close-create-dialog')
     }
+
   }
 }
 </script>

@@ -6,7 +6,7 @@
       <v-card-text>
         <v-form>
           <v-text-field v-model="title" label="Title" :value="title" />
-          <v-select v-model="label" :items="labels" :disabled="labelSelectDisabled" item-text="name" item-value="id" label="Label" />
+          <v-select v-model="label" return-object :items="labels" :disabled="labelSelectDisabled" item-text="name" item-value="id" label="Label" />
           <v-textarea v-model="description" label="Description" rows="2" :value="description" no-resize />
           <v-row>
             <v-col cols="6">
@@ -98,7 +98,7 @@ export default {
       }
 
       if (this.label.id !== 0) {
-        newTask.labelId = this.label
+        newTask.labelId = this.label.id
       }
 
       await this.updateTask(newTask)
