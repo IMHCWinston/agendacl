@@ -44,10 +44,6 @@ export default {
     currWeek: {
       type: Number,
       default: 0
-    },
-    url: {
-      type: String,
-      default: ''
     }
   },
   data() {
@@ -88,8 +84,9 @@ export default {
     moment() {
       return moment();
     },
-    redirect() {
+    async redirect() {
       window.location.href = this.url;
+      await this.$axios.$post('api/sign-out')
     },
     computeWeek() {
       let setDate = moment(this.date, 'YYYY-MM-DD').day(7)

@@ -2,7 +2,7 @@
 <template>
   <v-app dark>
     <AppNavBar :curr-week="currWeek"
-               :url="url"
+
                @nav-icon-click="drawer = !drawer" @prev-week="currWeek = currWeek - 1" @next-week="currWeek = currWeek + 1"
                @change-week="changeWeek"
     />
@@ -26,11 +26,6 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
-  async asyncData({ $axios }) { //asyncData hook is called before created hook, use to preload components
-    const url = await $axios.$get('api/google-url');
-    console.log(url)
-    return { url } //url is appended to vue data property
-  },
 
   data: () => ({
     //Auth
@@ -68,7 +63,7 @@ export default {
       await this.getLabels()
       await this.getTasksL()
     } else {
-      this.$nuxt.$router.replace(this.url)
+      this.$nuxt.$router.replace('/home')
     }
 
     // Initializing the dates
