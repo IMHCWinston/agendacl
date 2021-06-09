@@ -91,7 +91,6 @@ export default {
 
   async created() {
     let GCLabels = await this.getGCLabels()
-    console.log(GCLabels)
     let labels = this.$store.state.entries.labels
     for (let i = 1; i < labels.length; i++) {
       let index = GCLabels.findIndex(function(o) {
@@ -131,12 +130,10 @@ export default {
       }
     },
     async deleteDialogLabel(label, index) {
-      console.log(index)
       await this.updateLabel(this.labels)
       await this.deleteLabel([[label], index])
     },
     async onDialogExit() {
-      console.log(this.labels)
       await this.updateLabel(this.labels)
       this.select = { id: undefined, name: '', isGCLabel: false, courseName: 'Custom Label' }
       this.$emit('input', this.$event);

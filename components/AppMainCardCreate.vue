@@ -93,7 +93,6 @@ export default {
         newTask.hasDueTime = true
         newTask.dueDate = moment(this.dateStr + ' ' + this.time).toISOString(true)
       }
-      console.log(newTask)
       await this.createTask(newTask)
       this.$emit('close-create-dialog')
     }
