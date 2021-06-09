@@ -13,123 +13,45 @@
       <meta content="width=device-width, initial-scale=1" name="viewport">
       <meta content="Webflow" name="generator">
       <link href="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/css/landing-page-d4c502.webflow.fa837260f.css" rel="stylesheet" type="text/css">
-
-      <style>
-        .arrow {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-        supported by Chrome and Opera */
-        }
-      </style>
-      <!-- Change Scrollbar (OPTIONAL) -->
-      <style>
-        ::-webkit-scrollbar {
-        width: 15px;
-        }
-
-        ::-webkit-scrollbar-track {
-        border-radius: 0px;
-        background-color: #fff;
-        }
-
-        ::-webkit-scrollbar-thumb {
-        background: #484dff;
-        border-radius: 0px;
-        }
-      </style>
+      <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+      <link href="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e882b5c9782c_favicon.png" rel="shortcut icon" type="image/x-icon">
+      <link href="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8b95fc9782d_webclip.png" rel="apple-touch-icon">
+      <!-- No Highlight Testimonial Arrows www.flowbase.co (OPTIONAL) -->
     </head>
     <body>
-      <div class="remove-before-use">
-        <div data-w-id="8d5d4692-5fe4-3751-34fe-54a395651f3c" class="flowbase-card-wrap">
-          <div class="flowbase-card-delete">
-            <div class="flowbase-left-wrap">
-              <div class="flowbase-icon-wrap">
-                <img src="https://uploads-ssl.webflow.com/5c3ae9a8e76e083b33f1dd85/5c3ae9a8e76e087c0bf1dd91_flow-ico.svg" width="25" alt="" class="flowbase-icon">
-                <a href="https://flowbase.co" target="_blank" class="flowbase-home-link w-inline-block" />
-              </div>
-              <div class="flowbase-title-wrap">
-                <div class="flowbase-title">Flowbase | Free Template</div>
-                <div class="flowbase-author-wrap">
-                  <a href="https://flowbase.co" target="_blank" class="flowbase-author">Visit us
-                    <span class="text-span-3">@flowbase.co</span>
-                    <span class="text-span-2" />
-                    <span class="flowbase-underline" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="clone-button w-inline-block">
-              <div>CLONE NOW</div>
-            </a>
-            <div data-w-id="8d5d4692-5fe4-3751-34fe-54a395651f4c" class="flowbase-close-card">
-              <img src="https://uploads-ssl.webflow.com/5aed5f7ff167d632686865b0/5beac8ffed94f5c015f87bb8_x.svg" width="15" height="15" alt="" class="flowbase-exit">
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="header">
         <div class="container">
           <div class="hero-content">
             <div class="hero-block">
               <div class="content-block-hero">
                 <h1 style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading">No more missing assignments and hidden due dates</h1>
-                <p style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph-hero">
-                  No more lateness. No more &quot;I forgot&quot;.
-                  <br>Set your schedule, free your mind.
-                  <br>Introducing:
-                  <strong>B</strong>est
-                  <strong>D</strong>iary
-                  <strong>S</strong>chedule
-                  <strong>M</strong>anager.
-                </p>
-                <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero">
-                  <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="button w-button">Log in now</a>
-                  <a href="#" class="link">Or see how you can use it</a>
-                </div>
+                <p style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph-hero">No more lateness. No more &quot;I forgot&quot;. <br>Set your schedule, free your mind.<br>Introducing: <strong>B</strong>est <strong>D</strong>iary <strong>S</strong>chedule <strong>M</strong>anager.</p>
+                <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero"><a :href="url" class="button w-button">Log in now</a><a href="#manual" class="link">Or see how you can use it</a></div>
               </div>
             </div>
-            <div style="-webkit-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-image-wrap">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg" sizes="(max-width: 479px) 90vw, (max-width: 767px) 86vw, (max-width: 991px) 88vw, 41vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg 2000w" alt="" class="hero-image">
-            </div>
+            <div style="-webkit-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-image-wrap"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg" sizes="(max-width: 479px) 90vw, (max-width: 767px) 86vw, (max-width: 991px) 88vw, 41vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bf324148e2b0985d641_3573382.jpg 2000w" alt="" class="hero-image"></div>
           </div>
         </div>
         <div class="navigation">
           <div class="container-navigation">
-            <div class="navigation-block-left">
-              <a href="#" class="logo-link w-inline-block">
-                <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e87167c977fc_logo.svg" width="220" alt="" class="logo-image">
-              </a>
-            </div>
+            <div class="navigation-block-left"><a href="#" class="logo-link w-inline-block"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e87167c977fc_logo.svg" width="220" alt="" class="logo-image"></a></div>
             <div class="navigation-link-wrap">
-              <a href="#" class="navigation-link w-inline-block">
-                <div class="navigation-text">Home</div>
-              </a>
-              <a href="#" class="navigation-link w-inline-block">
+              <a href="#about" class="navigation-link w-inline-block">
                 <div class="navigation-text">About</div>
               </a>
-              <a href="#" class="navigation-link w-inline-block">
+              <a href="#manual" class="navigation-link w-inline-block">
                 <div class="navigation-text">Manual</div>
               </a>
             </div>
             <div class="navigation-block-right">
-              <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="button-navigation w-button">Log In</a>
+              <a :href="url" class="button-navigation w-button">Log In</a>
               <div data-delay="0" class="dropdown-mobile w-dropdown">
                 <div class="dropdown-toggle w-dropdown-toggle">
                   <a href="#" class="mobile-button-link w-inline-block">
                     <div data-w-id="f78afd3b-5a8e-facd-35a2-30bab6f51719" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5d4bf31a8620ae8b6132d697/5d5be4b6eaf3b73429e80497_7943-circle-menu-closing.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="0" data-duration="0" data-ix2-initial-state="0" class="mobile-icon-animation" />
                   </a>
                 </div>
-                <nav class="mobiel-dropdown w-dropdown-list">
-                  <a href="#" class="dropdown-link w-dropdown-link">Home</a>
-                  <a href="#" class="dropdown-link w-dropdown-link">Services</a>
-                  <a href="#" class="dropdown-link w-dropdown-link">Company</a>
-                  <a href="#" class="dropdown-link w-dropdown-link">Blog</a>
-                  <a href="#" class="dropdown-link w-dropdown-link">Clone</a>
-                </nav>
+                <nav class="mobiel-dropdown w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">Home</a><a href="#" class="dropdown-link w-dropdown-link">Services</a><a href="#" class="dropdown-link w-dropdown-link">Company</a><a href="#" class="dropdown-link w-dropdown-link">Blog</a><a href="#" class="dropdown-link w-dropdown-link">Clone</a></nav>
               </div>
             </div>
           </div>
@@ -139,23 +61,13 @@
       <div class="section-content">
         <div class="container">
           <div class="column-wrap-reversed">
-            <div class="image-block">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049.jpg" sizes="(max-width: 479px) 91vw, (max-width: 767px) 86vw, (max-width: 991px) 84vw, 39vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049.jpg 2000w" alt="">
-            </div>
+            <div class="image-block"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049.jpg" sizes="(max-width: 479px) 91vw, (max-width: 767px) 86vw, (max-width: 991px) 84vw, 39vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be0bc27d2f515ed614c6cf_5483049.jpg 2000w" alt=""></div>
             <div class="content-block-left">
               <div class="content-wrap">
+                <a id="about" />
                 <p class="title">Introducing:</p>
                 <h2 class="heading-primary">The ultimate scheduling solution for students</h2>
-                <p class="paragraph">
-                  I know your struggle. Our struggle.
-                  <br>
-                  <br>Being a student and experiencing online learning firsthand was tough. Too many assignments, too many homework. Failing to finish tasks means failing to catch up.
-                  <br>
-                  <br>&quot;I forgot that I had Math homework, and it was due yesterday, damn it!&quot;
-                  <br>
-                  <br>Then the vicious cycle repeats.
-                  <br>
-                </p>
+                <p class="paragraph">I know your struggle. Our struggle.<br><br>Being a student and experiencing online learning firsthand was tough. Too many assignments, too many homework. Failing to finish tasks means failing to catch up.<br><br>&quot;I forgot that I had Math homework, and it was due yesterday, damn it!&quot;<br><br>Then the vicious cycle repeats.<br></p>
               </div>
             </div>
           </div>
@@ -163,10 +75,7 @@
         <div class="container space-below">
           <div class="title-wrap-left">
             <p class="title">Features</p>
-            <h3 class="heading-primary">
-              Homework and tests
-              <span class="text-span">all in one place</span>
-            </h3>
+            <h3 class="heading-primary">Homework and tests <span class="text-span">all in one place</span></h3>
           </div>
           <div class="service-card-wrap">
             <div class="column">
@@ -183,10 +92,7 @@
                 <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be117554b1dd552f6644a4_smartphone.svg" width="75" alt="" class="service-icon">
                 <div class="card-content-wrap">
                   <h3 class="heading-3">Simple and intuitive</h3>
-                  <p class="paragraph-2">
-                    No mess, no clutter. Everything you need done this week is waiting for you.
-                    <br>We&#x27;re mobile friendly too! Access your diary anytime, anywhere
-                  </p>
+                  <p class="paragraph-2">No mess, no clutter. Everything you need done this week is waiting for you.<br>We&#x27;re mobile friendly too! Access your diary anytime, anywhere</p>
                 </div>
               </div>
             </div>
@@ -195,10 +101,7 @@
                 <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60be118f0ba5562f93e6295c_clock%20(1).svg" width="75" alt="" class="service-icon">
                 <div class="card-content-wrap">
                   <h3 class="heading-3">Fast and easy</h3>
-                  <p class="paragraph-2">
-                    In a class and your teacher is spouting out test dates, assignment dates, and deadlines? Check!
-                    <br>Easily write your entries without missing a single beat.
-                  </p>
+                  <p class="paragraph-2">In a class and your teacher is spouting out test dates, assignment dates, and deadlines? Check!<br>Easily write your entries without missing a single beat.</p>
                 </div>
               </div>
             </div>
@@ -218,20 +121,14 @@
                 <div class="title-capped">Students</div>
               </div>
             </div>
-            <div class="arrow-wrap">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e86afcc9781f_arrow-right.svg" alt="" class="arrow-image">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8044dc97821_arrow-down.svg" alt="" class="arrow-image-mobile">
-            </div>
+            <div class="arrow-wrap"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e86afcc9781f_arrow-right.svg" alt="" class="arrow-image"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8044dc97821_arrow-down.svg" alt="" class="arrow-image-mobile"></div>
             <div class="statistic-circle-wrap">
               <div class="circle-div">
                 <h1 class="counterup">420</h1>
                 <div class="title-capped">Schools</div>
               </div>
             </div>
-            <div class="arrow-wrap">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8f967c97820_arrow-right-02.svg" alt="" class="arrow-image">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8ad57c97822_arrow-down-02.svg" alt="" class="arrow-image-mobile-02">
-            </div>
+            <div class="arrow-wrap"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8f967c97820_arrow-right-02.svg" alt="" class="arrow-image"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e8ad57c97822_arrow-down-02.svg" alt="" class="arrow-image-mobile-02"></div>
             <div class="statistic-circle-wrap">
               <div class="circle-div">
                 <h1 class="counterup">69</h1>
@@ -244,25 +141,17 @@
       <div class="section-cta">
         <div class="container">
           <div class="title-wrap">
-            <h3 class="heading-primary h3-centre-white">
-              Schedule like never before
-              <span class="text-span" />
-            </h3>
-            <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero">
-              <a href="#" class="button w-button">Log in now!</a>
-              <a href="#" class="link-02">See our Process</a>
-            </div>
+            <h3 class="heading-primary h3-centre-white">Schedule like never before<span class="text-span" /></h3>
+            <div style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-wrap-hero"><a :href="url" class="button w-button">Log in now!</a><a href="#manual" class="link-02">See our Process</a></div>
           </div>
         </div>
       </div>
       <div class="section-content">
         <div class="container space-below">
           <div class="title-wrap-left head2">
+            <a id="manual" />
             <p class="title">User Manual</p>
-            <h3 class="heading-primary head2">
-              Easy to understand
-              <span class="text-span">unlike women</span>
-            </h3>
+            <h3 class="heading-primary head2">Easy to understand <span class="text-span">unlike women</span></h3>
           </div>
         </div>
         <div data-w-id="90ab7248-4f69-4895-ad60-e486565c4d6b" class="section-blog">
@@ -320,44 +209,28 @@
         </div>
         <div class="container">
           <div class="column-wrap-reversed">
-            <div class="image-block">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview.JPG" sizes="(max-width: 479px) 91vw, (max-width: 767px) 86vw, (max-width: 991px) 84vw, 39vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview.JPG 1501w" alt="">
-            </div>
+            <div class="image-block"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview.JPG" sizes="(max-width: 479px) 91vw, (max-width: 767px) 86vw, (max-width: 991px) 84vw, 39vw" srcset="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-500.jpeg 500w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-800.jpeg 800w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bea068b653ee1354c0adf7_largeview.JPG 1501w" alt=""></div>
             <div class="content-block-left">
               <div class="content-wrap">
                 <p class="title">2.</p>
                 <h2 class="heading-primary">A Bird Eye&#x27;s View</h2>
-                <p class="paragraph">
-                  Sometimes, as a student, you just want to know what&#x27;s up this week. Just a simple glance allows us to take note of what should be done.
-                  <br>
-                  <br>No more forgetting assignments.
-                </p>
+                <p class="paragraph">Sometimes, as a student, you just want to know what&#x27;s up this week. Just a simple glance allows us to take note of what should be done.<br><br>No more forgetting assignments.</p>
               </div>
             </div>
           </div>
           <div class="title-wrap-left head2">
             <p class="title">Navigation</p>
-            <h3 class="heading-primary head2">
-              Focus only on
-              <br>‍
-              <span class="text-span">what matters</span>
-            </h3>
+            <h3 class="heading-primary head2">Focus only on<br>‍<span class="text-span">what matters</span></h3>
           </div>
         </div>
         <div class="container">
           <div class="column-wrap-reversed">
-            <div class="image-block">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60c03dd3c84df7b4631e9edd_weekbyweek.JPG" alt="">
-            </div>
+            <div class="image-block"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60c03dd3c84df7b4631e9edd_weekbyweek.JPG" alt=""></div>
             <div class="content-block-left">
               <div class="content-wrap">
                 <p class="title">3.</p>
                 <h2 class="heading-primary">Week by Week</h2>
-                <p class="paragraph">
-                  Displaying tasks weekly allows you to focus on what matters. Schoolwork, unlike life goals, usually get done one day before.
-                  <br>
-                  <br>This allows you to quickly take inventory of what you need to do this week, and plan ahead for the upcoming weeks.
-                </p>
+                <p class="paragraph">Displaying tasks weekly allows you to focus on what matters. Schoolwork, unlike life goals, usually get done one day before.<br><br>This allows you to quickly take inventory of what you need to do this week, and plan ahead for the upcoming weeks.</p>
               </div>
             </div>
           </div>
@@ -366,17 +239,12 @@
       <div class="section-content">
         <div class="container">
           <div class="column-wrap">
-            <div class="image-block">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60c029c820924f5770becb50_apptask.JPG" alt="">
-            </div>
+            <div class="image-block"><img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60c029c820924f5770becb50_apptask.JPG" alt=""></div>
             <div class="content-block-right">
               <div class="content-wrap">
                 <p class="title">4.</p>
                 <h2 class="heading-primary">Understanding the features</h2>
-                <p class="paragraph">
-                  Any task that pop into your mind shall be quickly added to your diary easily!
-                  <br>
-                </p>
+                <p class="paragraph">Any task that pop into your mind shall be quickly added to your diary easily!<br></p>
                 <div class="feature" />
               </div>
             </div>
@@ -394,15 +262,7 @@
                   </div>
                   <div class="blog-content">
                     <h3 class="heading-3">A quick look</h3>
-                    <p class="paragraph">
-                      A quick look at the task entry shows a label, title, and due time.
-                      <br>
-                      <br>Google Classroom tasks are marked with a GC logo next to the due time.
-                      <br>
-                      <br>To add a new task in a particular day, double click on the blue header.
-                      <br>
-                      <br>To view an enlarged version of all the tasks that day, click once instead.
-                    </p>
+                    <p class="paragraph">A quick look at the task entry shows a label, title, and due time. <br><br>Google Classroom tasks are marked with a GC logo next to the due time.<br><br>To add a new task in a particular day, double click on the blue header.<br><br>To view an enlarged version of all the tasks that day, click once instead.</p>
                   </div>
                 </div>
               </div>
@@ -416,11 +276,7 @@
                   </div>
                   <div class="blog-content">
                     <h3 class="heading-3">Adding a new task</h3>
-                    <p class="paragraph">
-                      Add a short title, a label (discussed further), and a description of the task.
-                      <br>
-                      <br>All fields are optional. You could just fill in the title if it suits you.
-                    </p>
+                    <p class="paragraph">Add a short title, a label (discussed further), and a description of the task.<br><br>All fields are optional. You could just fill in the title if it suits you.</p>
                   </div>
                 </div>
               </div>
@@ -434,13 +290,7 @@
                   </div>
                   <div class="blog-content">
                     <h3 class="heading-3">Viewing the task</h3>
-                    <p class="paragraph">
-                      After clicking on a task, a dropdown will appear.
-                      <br>
-                      <br>By default, a shortened version of your description is shown. You can enlarge by clicking on it.
-                      <br>
-                      <br>Click the pencil icon to edit and the checkmark icon to mark as done. A finished assignment will be marked green and crossed out
-                    </p>
+                    <p class="paragraph">After clicking on a task, a dropdown will appear.<br><br>By default, a shortened version of your description is shown. You can enlarge by clicking on it.<br><br>Click the pencil icon to edit and the checkmark icon to mark as done. A finished assignment will be marked green and crossed out</p>
                   </div>
                 </div>
               </div>
@@ -450,11 +300,7 @@
         <div class="container">
           <div class="title-wrap-left head2">
             <p class="title">Labels</p>
-            <h3 class="heading-primary head2">
-              Know what to do
-              <br>‍
-              <span class="text-span">with a quick glance</span>
-            </h3>
+            <h3 class="heading-primary head2">Know what to do<br>‍<span class="text-span">with a quick glance</span></h3>
           </div>
         </div>
         <div class="container">
@@ -469,13 +315,7 @@
                   </div>
                   <div class="blog-content">
                     <h3 class="heading-3">Adding labels</h3>
-                    <p class="paragraph">
-                      Labels are used to group tasks together and quickly sort them out.
-                      <br>
-                      <br>A label should be short, simple, and reusable.
-                      <br>
-                      <br>To add labels, press the red label button on the bottom left of your screen.
-                    </p>
+                    <p class="paragraph">Labels are used to group tasks together and quickly sort them out.<br><br>A label should be short, simple, and reusable.<br><br>To add labels, press the red label button on the bottom left of your screen.</p>
                   </div>
                 </div>
               </div>
@@ -489,14 +329,7 @@
                   </div>
                   <div class="blog-content">
                     <h3 class="heading-3">Managing Labels</h3>
-                    <p class="paragraph">
-                      To create a custom label (selected by default), write your label in the text field.
-                      <br>
-                      <br>To add labels to Google Classroom tasks, select the class from the dropdown and write a label you&#x27;d like. Press the + button to save your new label.
-                      <br>
-                      <br>Changes made to other labels will be saved automatically when exiting
-                      <br>‍
-                    </p>
+                    <p class="paragraph">To create a custom label (selected by default), write your label in the text field.<br><br>To add labels to Google Classroom tasks, select the class from the dropdown and write a label you&#x27;d like. Press the + button to save your new label.<br><br>Changes made to other labels will be saved automatically when exiting<br>‍</p>
                   </div>
                 </div>
               </div>
@@ -532,19 +365,65 @@
         <div class="legal-wrap">
           <div class="legal-text">© Copyright 2019 flowbase.co </div>
           <div class="legal-text">Images from Unsplash / Freepik.com</div>
-          <div class="social-link-wrap">
-            <a href="https://twitter.com/madebyflowcraft" target="_blank" class="social-link w-inline-block">
-              <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f3d9d233139_twitter%20(4).svg" alt="">
-            </a>
-            <a href="https://www.instagram.com/madebyflowcraft/" target="_blank" class="social-link w-inline-block">
-              <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f9df7233138_instagram%20(6).svg" alt="">
-            </a>
-            <a href="https://gumroad.com/flowcraft" target="_blank" class="social-link w-inline-block">
-              <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d81e9e6e7908e56bf587612_Gumroad.svg" alt="">
-            </a>
-          </div>
+          <div class="social-link-wrap"><a href="https://twitter.com/madebyflowcraft" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f3d9d233139_twitter%20(4).svg" alt=""></a><a href="https://www.instagram.com/madebyflowcraft/" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f9df7233138_instagram%20(6).svg" alt=""></a><a href="https://gumroad.com/flowcraft" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d81e9e6e7908e56bf587612_Gumroad.svg" alt=""></a></div>
         </div>
       </div>
+      <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60bdafd24f62e8078ac977ef" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" /><script src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/js/webflow.df1ffdce4.js" type="text/javascript" /><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><!-- Custom Slider Arrows -->
+
+      <!-- Count Up Interaction -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js" />
+      <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js" />
+      <script>
+        jQuery(document).ready(function( $ ) {
+        $('.counterup').counterUp({
+        delay: 100, // the delay time in ms
+        time: 2000 // the speed time in ms
+        });
+        });
+        $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        });
+      </script>
     </body>
   </html>
 </template>
+
+<script>
+export default {
+  async asyncData({ $axios }) { //asyncData hook is called before created hook, use to preload components
+    const url = await $axios.$get('api/google-url');
+    console.log(url)
+    return { url } //url is appended to vue data property
+  }
+}
+</script>
+
+<style scoped>
+    html {
+      scroll-behavior: smooth;
+    }
+    .arrow {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+    }
+    ::-webkit-scrollbar {
+    width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #fff;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: #484dff;
+    border-radius: 0px;
+    }
+</style>
