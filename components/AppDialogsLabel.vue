@@ -41,6 +41,7 @@
                   <v-col cols="6" class="py-0">
                     <v-text-field
                       v-model="item.name"
+                      autocomplete="off"
                       label="Label"
                       append-outer-icon="mdi-delete"
                       @click:append-outer="deleteDialogLabel(item,index)"
