@@ -26,8 +26,18 @@ export default {
   name: 'AppMainCardViewTasks',
   props: {
     value: Boolean,
-    tasks: Array,
-    day: Object
+    tasks: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    day: {
+      type: Object,
+      default() {
+        return moment()
+      }
+    }
   },
   data() {
     return {

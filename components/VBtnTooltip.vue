@@ -14,9 +14,9 @@ export default {
   name: 'VBtnTooltip',
   props: {
     tooltip: { type: String, required: false, default: '' },
-    'tooltip-pos': { type: String, required: false, default: 'bottom' },
-    'class-btn': { type: String, required: false, default: '' },
-    'style-btn': { type: String, required: false, default: '' }
+    tooltipPos: { type: String, required: false, default: 'bottom' },
+    classBtn: { type: String, required: false, default: '' },
+    styleBtn: { type: String, required: false, default: '' }
   },
   computed: {
     bottom() {

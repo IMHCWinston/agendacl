@@ -23,7 +23,12 @@ export default {
   name: 'AppTaskEPDescDialog',
   props: {
     value: Boolean,
-    task: Object
+    task: {
+      type: Object,
+      default() {
+        return { id: undefined }
+      }
+    }
   }
 }
 </script>

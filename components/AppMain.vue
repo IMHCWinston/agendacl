@@ -16,7 +16,12 @@ export default {
   name: 'AppMain',
 
   props: {
-    dayDatas: Array
+    dayDatas: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
   },
   data() {
     return {

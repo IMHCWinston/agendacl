@@ -43,7 +43,12 @@ export default {
   name: 'AppMainCardCreate',
   props: {
     value: Boolean,
-    day: Object
+    day: {
+      type: Object,
+      default() {
+        return moment()
+      }
+    }
   },
   data() {
     return {

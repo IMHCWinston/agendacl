@@ -41,8 +41,14 @@ import moment from 'moment'
 export default {
   name: 'AppNavBar',
   props: {
-    currWeek: Number,
-    url: String
+    currWeek: {
+      type: Number,
+      default: 0
+    },
+    url: {
+      type: String,
+      default: ''
+    }
   },
   data() {
     return {

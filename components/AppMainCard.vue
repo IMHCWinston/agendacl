@@ -29,7 +29,12 @@ import moment from 'moment'
 export default {
   name: 'AppMainCard',
   props: {
-    day: Object
+    day: {
+      type: Object,
+      default() {
+        return moment()
+      }
+    }
 
   },
   data() {

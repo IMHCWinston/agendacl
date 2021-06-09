@@ -19,7 +19,7 @@ module.exports = {
     'no-unused-vars': 'off',
     semi: 'off',
     'prefer-const': 'off',
-    'no-console': 'off',
+    'no-console': 'warn',
     'space-before-function-paren': ['error', 'never'],
     'spaced-comment': 'off',
     'no-trailing-spaces': 'warn',

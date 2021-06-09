@@ -76,7 +76,12 @@ import moment from 'moment'
 export default {
   name: 'AppTaskEP',
   props: {
-    task: Object
+    task: {
+      type: Object,
+      default() {
+        return { id: undefined }
+      }
+    }
   },
   data() {
     return {
