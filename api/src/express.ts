@@ -471,7 +471,7 @@ app.get('/oauth2callback', ash(async (req, res) => { //not part of api
   await createUser(userId);
   res.cookie('userId',userId, {maxAge: 999*999*999*999,signed: true,httpOnly: true, secure: true});
   res.cookie('refreshToken',refreshToken, {maxAge: 999*999*999*999,signed: true,httpOnly: true, secure: true});
-  res.redirect('/');
+  res.redirect('/app');
 }))
 
 app.post('/sign-out', ash(async (req, res) => {

@@ -434,7 +434,7 @@ app.get('/oauth2callback', express_async_handler_1.default((req, res) => __await
     yield createUser(userId);
     res.cookie('userId', userId, { maxAge: 999 * 999 * 999 * 999, signed: true, httpOnly: true, secure: true });
     res.cookie('refreshToken', refreshToken, { maxAge: 999 * 999 * 999 * 999, signed: true, httpOnly: true, secure: true });
-    res.redirect('/');
+    res.redirect('/app');
 })));
 app.post('/sign-out', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.clearCookie('refreshToken');
