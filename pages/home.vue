@@ -507,7 +507,21 @@
 
 <script>
 export default {
+  head() {
+    return {
+      script: [
 
+        { src: 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60bdafd24f62e8078ac977ef' },
+        { src: 'https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/js/webflow.df1ffdce4.js' },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js' },
+        { src: 'https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js' }
+
+      ]
+    }
+  },
+  mounted() {
+    !(function(o, c) { let n = c.documentElement; let t = ' w-mod-'; n.className += t + 'js', ('ontouchstart' in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + 'touch') }(window, document));
+  }
 }
 </script>
 
