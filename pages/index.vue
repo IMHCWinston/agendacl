@@ -7,7 +7,7 @@
                @change-week="changeWeek"
     />
     <AppNavDrawer v-model="drawer" />
-    <a :href="url">login</a>
+
     <AppMain
       :day-datas="dayDatas"
 
