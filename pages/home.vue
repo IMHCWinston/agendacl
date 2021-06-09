@@ -44,8 +44,8 @@
                 <strong>M</strong>anager.
               </p>
               <div class="button-wrap-hero">
-                <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="button w-button">Log in now</a>
-                <a href="#" class="link">Or see how you can use it</a>
+                <a :href="url" class="button w-button">Log in now</a>
+                <a href="#manual" class="link">Or see how you can use it</a>
               </div>
             </div>
           </div>
@@ -62,18 +62,15 @@
             </a>
           </div>
           <div class="navigation-link-wrap">
-            <a href="#" class="navigation-link w-inline-block">
-              <div class="navigation-text">Home</div>
-            </a>
-            <a href="#" class="navigation-link w-inline-block">
+            <a href="#about" class="navigation-link w-inline-block">
               <div class="navigation-text">About</div>
             </a>
-            <a href="#" class="navigation-link w-inline-block">
+            <a href="#manual" class="navigation-link w-inline-block">
               <div class="navigation-text">Manual</div>
             </a>
           </div>
           <div class="navigation-block-right">
-            <a href="https://webflow.com/website/Cloneable-Start-up-Template-CLONE?rfsn=1238427.48b8d" target="_blank" class="button-navigation w-button">Log In</a>
+            <a :href="url" class="button-navigation w-button">Log In</a>
             <div data-delay="0" class="dropdown-mobile w-dropdown">
               <div class="dropdown-toggle w-dropdown-toggle">
                 <a href="#" class="mobile-button-link w-inline-block">
@@ -81,11 +78,9 @@
                 </a>
               </div>
               <nav class="mobiel-dropdown w-dropdown-list">
-                <a href="#" class="dropdown-link w-dropdown-link">Home</a>
-                <a href="#" class="dropdown-link w-dropdown-link">Services</a>
-                <a href="#" class="dropdown-link w-dropdown-link">Company</a>
-                <a href="#" class="dropdown-link w-dropdown-link">Blog</a>
-                <a href="#" class="dropdown-link w-dropdown-link">Clone</a>
+                <a :href="url" class="dropdown-link w-dropdown-link">Log in</a>
+                <a href="#about" class="dropdown-link w-dropdown-link">About</a>
+                <a href="#manual" class="dropdown-link w-dropdown-link">Manual</a>
               </nav>
             </div>
           </div>
@@ -101,6 +96,7 @@
           </div>
           <div class="content-block-left">
             <div class="content-wrap">
+              <a id="about" />
               <p class="title">Introducing:</p>
               <h2 class="heading-primary">The ultimate scheduling solution for students</h2>
               <p class="paragraph">
@@ -206,8 +202,8 @@
             <span class="text-span" />
           </h3>
           <div class="button-wrap-hero">
-            <a href="#" class="button w-button">Log in now!</a>
-            <a href="#" class="link-02">See our Process</a>
+            <a :href="url" class="button w-button">Log in now!</a>
+            <a href="#manual" class="link-02">See our Process</a>
           </div>
         </div>
       </div>
@@ -215,6 +211,7 @@
     <div class="section-content">
       <div class="container space-below">
         <div class="title-wrap-left head2">
+          <a id="manual" />
           <p class="title">User Manual</p>
           <h3 class="heading-primary head2">
             Easy to understand
@@ -509,9 +506,16 @@
 
 <script>
 export default {
+  async asyncData({ $axios }) { //asyncData hook is called before created hook, use to preload components
+    const url = await $axios.$get('api/google-url');
 
+    return { url } //url is appended to vue data property
+  }
 }
 </script>
 
 <style scoped src="@/assets/css/home.css">
+html {
+  scroll-behavior: smooth;
+}
 </style>
