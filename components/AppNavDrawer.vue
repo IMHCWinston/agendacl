@@ -26,10 +26,10 @@ export default {
     return {
       selected: 0,
       items: [
-        { name: 'Agenda', iconTitle: 'mdi-book' },
-        { name: 'Tasks', iconTitle: 'mdi-clipboard-check' },
-        { name: 'Labels', iconTitle: 'mdi-tag' },
-        { name: 'Settings', iconTitle: 'mdi-cog' }
+        { name: 'Agenda', iconTitle: 'mdi-book' }
+        // { name: 'Tasks', iconTitle: 'mdi-clipboard-check' },
+        // { name: 'Labels', iconTitle: 'mdi-tag' },
+        // { name: 'Settings', iconTitle: 'mdi-cog' }
       ]
     }
   }
