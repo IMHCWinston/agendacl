@@ -39,7 +39,7 @@ model Task {
 
 model Label {
   id String @id @default(cuid())
-  title String
+  name String
   user User @relation(fields: [userId], references: [id])
   tasks Task[]
   userId   String
