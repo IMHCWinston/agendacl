@@ -42,6 +42,7 @@ const _ = __importStar(require("lodash"));
 const express_async_handler_1 = __importDefault(require("express-async-handler"));
 const moment_1 = __importDefault(require("moment"));
 const prisma = new client_1.PrismaClient();
+const BASE_URL = process.env.BASE_URL || 'localhost:3000';
 const scopes = [
     'https://www.googleapis.com/auth/classroom.courses.readonly',
     'https://www.googleapis.com/auth/classroom.coursework.me.readonly',
@@ -78,8 +79,10 @@ function init() {
 function retrieveToken(code) {
     return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
         let authInstance = authClient;
+        console.log(code);
         const { tokens } = yield authInstance.getToken(code);
         authInstance.setCredentials(tokens);
+        console.log(authInstance);
         let userId = yield getUserId(authInstance);
         res({ userId, refreshToken: tokens.refresh_token, auth: authInstance });
     }));
@@ -411,9 +414,6 @@ function deleteAgendaLabels(labels) {
 app.use(express_1.default.static(ROOT_DIR));
 app.use(cookie_parser_1.default('myAgendaApp'));
 app.use(express_1.default.json());
-app.get('/hello', (req, res) => {
-    res.sendFile(ROOT_DIR + "/index.html");
-});
 app.use((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     if (!req.signedCookies.refreshToken) {
         next();
@@ -421,13 +421,17 @@ app.use((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     }
     let refreshToken = req.signedCookies.refreshToken;
     let authInstance = authClient;
+    console.log(GoogleRedirectURL);
     authInstance.setCredentials({ refresh_token: refreshToken });
     res.locals.auth = authInstance;
     res.locals.userId = req.signedCookies.userId;
     next();
 }));
-app.get('/google-url', (req, res) => {
-    res.send(GoogleRedirectURL);
+app.get('/sign-in-url', (req, res) => {
+    if (!res.locals.auth || !res.locals.userId) {
+        res.send(GoogleRedirectURL);
+    }
+    res.send("/app");
 });
 app.get('/oauth2callback', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     let { userId, refreshToken } = yield retrieveToken(req.query.code);

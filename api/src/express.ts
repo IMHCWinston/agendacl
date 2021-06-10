@@ -3,13 +3,14 @@ const app = express();
 import fs from "fs";
 import path from 'path';
 import cookieParser from "cookie-parser";
-import {google, Auth, classroom_v1} from "googleapis";
+import {google, Auth, classroom_v1, GoogleApis} from "googleapis";
 import {PrismaClient, Task, Prisma, User, Label} from '@prisma/client';
 import * as _ from 'lodash';
 import ash from 'express-async-handler';
 import { NextFunction, Request, Response} from 'express';
 import moment from 'moment';
 const prisma = new PrismaClient();
+const BASE_URL = process.env.BASE_URL || 'localhost:3000'
 
 const scopes = [
   'https://www.googleapis.com/auth/classroom.courses.readonly',
@@ -75,7 +76,7 @@ return new Promise<{GURL: string, auth: Auth.OAuth2Client}>(async (res, rej) => 
   const url = oauth2Client.generateAuthUrl({
     // 'online' (default) or 'offline' (gets refresh_token)
     access_type: 'offline',
-    prompt : 'consent',
+    prompt: 'consent',
     // If you only need one scope you can pass it as a string
     scope: scopes
   })
@@ -88,8 +89,10 @@ return new Promise<{GURL: string, auth: Auth.OAuth2Client}>(async (res, rej) => 
 function retrieveToken(code: string) {
   return new Promise<{userId: string, refreshToken: string, auth: Auth.OAuth2Client}>(async (res, rej) => {
     let authInstance = authClient;
+    console.log(code);
     const {tokens} = await authInstance.getToken(code);
     authInstance.setCredentials(tokens);
+    console.log(authInstance);
     let userId = await getUserId(authInstance);
     res({userId, refreshToken: tokens.refresh_token!, auth: authInstance});
   })
@@ -444,10 +447,6 @@ app.use(express.static(ROOT_DIR));
 app.use(cookieParser('myAgendaApp'));
 app.use(express.json());
 
-app.get('/hello', (req, res) => {
-  res.sendFile(ROOT_DIR + "/index.html")
-})
-
 app.use(async (req, res, next) => {
   if (!req.signedCookies.refreshToken) {
       next();
@@ -455,6 +454,7 @@ app.use(async (req, res, next) => {
   }
   let refreshToken = req.signedCookies.refreshToken!;
   let authInstance = authClient;
+  console.log(GoogleRedirectURL);
   authInstance.setCredentials({refresh_token: refreshToken});
   res.locals.auth = authInstance;
   res.locals.userId = req.signedCookies.userId;
@@ -462,8 +462,12 @@ app.use(async (req, res, next) => {
 })
 
 
-app.get('/google-url',(req, res) => {
-  res.send(GoogleRedirectURL);
+app.get('/sign-in-url',(req, res) => {
+  if (!res.locals.auth || !res.locals.userId) {
+    res.send(GoogleRedirectURL);
+  }
+  res.send("/app");
+ 
 })
 
 app.get('/oauth2callback', ash(async (req, res) => { //not part of api

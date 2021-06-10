@@ -507,7 +507,7 @@
 <script>
 export default {
   async asyncData({ $axios }) { //asyncData hook is called before created hook, use to preload components
-    const url = await $axios.$get('api/google-url');
+    const url = await $axios.$get('api/sign-in-url');
     return { url } //url is appended to vue data property
   }
 }

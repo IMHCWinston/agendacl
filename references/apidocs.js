@@ -4,9 +4,9 @@
 export default [
   {
     name: 'Get Google URL',
-    url: 'api/google-url',
+    url: 'api/sign-in-url',
     type: 'get',
-    description: 'Retrieve Google Sign In URL from the API. In front end once user clicks sign in button, script redirects to the returned url',
+    description: 'Retrieve Sign In URL from the API either a google sign in url or a redirect url to the app.',
     'required-input-type': 'none',
     'returned-datatype': 'string'
   },
