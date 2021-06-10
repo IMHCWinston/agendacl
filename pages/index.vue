@@ -511,8 +511,7 @@ export default {
     return { url } //url is appended to vue data property
   },
   mounted() {
-    alert(process.env.BASE_URL);
-    alert(this.$axios.defaults.baseURL);
+    alert(process.env);
   }
 }
 
