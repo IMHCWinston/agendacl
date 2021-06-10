@@ -38,10 +38,7 @@
                 No more lateness. No more &quot;I forgot&quot;.
                 <br>Set your schedule, free your mind.
                 <br>Introducing:
-                <strong>B</strong>est
-                <strong>D</strong>iary
-                <strong>S</strong>chedule
-                <strong>M</strong>anager.
+                <strong>E</strong>-agenda
               </p>
               <div class="button-wrap-hero">
                 <a :href="url" class="button w-button">Log in now</a>
@@ -56,11 +53,6 @@
       </div>
       <div class="navigation">
         <div class="container-navigation">
-          <div class="navigation-block-left">
-            <a href="#" class="logo-link w-inline-block">
-              <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e87167c977fc_logo.svg" width="220" alt="" class="logo-image">
-            </a>
-          </div>
           <div class="navigation-link-wrap">
             <a href="#about" class="navigation-link w-inline-block">
               <div class="navigation-text">About</div>
@@ -87,7 +79,6 @@
         </div>
       </div>
     </div>
-    <div class="section-logo" />
     <div class="section-content">
       <div class="container">
         <div class="column-wrap-reversed">
@@ -209,7 +200,7 @@
       </div>
     </div>
     <div class="section-content">
-      <div class="container space-below">
+      <div class="container space-below" style="margin:0">
         <div class="title-wrap-left head2">
           <a id="manual" />
           <p class="title">User Manual</p>
@@ -469,33 +460,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container-flex">
-        <div class="footer-column-large">
-          <img src="https://uploads-ssl.webflow.com/60bdafd24f62e8078ac977ef/60bdafd24f62e87167c977fc_logo.svg" width="130" alt="logo" class="footer-logo">
-          <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s</p>
-          <a href="#" class="footer-link-wrap w-inline-block">
-            <img src="https://uploads-ssl.webflow.com/5d01778cda7c6cc8a63e0b64/5d1324fd4b05c818c6fbecc1_mail.svg" width="19" alt="" class="footer-icon">
-            <p class="footer-text-02">tom@flowbase.co</p>
-          </a>
-        </div>
-      </div>
-      <div class="legal-wrap">
-        <div class="legal-text">© Copyright 2019 flowbase.co </div>
-        <div class="legal-text">Images from Unsplash / Freepik.com</div>
-        <div class="social-link-wrap">
-          <a href="https://twitter.com/madebyflowcraft" target="_blank" class="social-link w-inline-block">
-            <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f3d9d233139_twitter%20(4).svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/madebyflowcraft/" target="_blank" class="social-link w-inline-block">
-            <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d6f91252fd62f9df7233138_instagram%20(6).svg" alt="">
-          </a>
-          <a href="https://gumroad.com/flowcraft" target="_blank" class="social-link w-inline-block">
-            <img src="https://uploads-ssl.webflow.com/5d6f91252fd62f03bd2330e7/5d81e9e6e7908e56bf587612_Gumroad.svg" alt="">
-          </a>
         </div>
       </div>
     </div>
