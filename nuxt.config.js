@@ -52,5 +52,8 @@ export default {
   serverMiddleware: {
     '/api': '~/api/dist/express.js'
   },
-  loading: false
+  loading: false,
+  env: {
+    baseUrl: process.env.BASE_URL
+  }
 }
