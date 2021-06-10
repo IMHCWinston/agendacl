@@ -507,10 +507,12 @@
 <script>
 export default {
   async asyncData({ $axios }) { //asyncData hook is called before created hook, use to preload components
-    alert(process.env.BASE_URL);
-    alert($axios.defaults.baseURL);
     const url = await $axios.$get('api/sign-in-url');
     return { url } //url is appended to vue data property
+  },
+  mounted() {
+    alert(process.env.BASE_URL);
+    alert(this.$axios.defaults.baseURL);
   }
 }
 
