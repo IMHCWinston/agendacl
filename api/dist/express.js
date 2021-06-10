@@ -426,6 +426,7 @@ app.use((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
 app.get('/sign-in-url', (req, res) => {
     if (!res.locals.auth || !res.locals.userId) {
         res.send(GoogleRedirectURL);
+        return;
     }
     res.send("/app");
 });
@@ -439,7 +440,7 @@ app.get('/oauth2callback', express_async_handler_1.default((req, res) => __await
 app.post('/sign-out', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.clearCookie('refreshToken');
     res.clearCookie('userId');
-    res.status(200).send("Sucess!");
+    res.send('Success!');
 })));
 app.get('/has-signed-in', express_async_handler_1.default((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     if (!res.locals.auth || !res.locals.userId) { //if no cookies

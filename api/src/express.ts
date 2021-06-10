@@ -461,6 +461,7 @@ app.use(async (req, res, next) => {
 app.get('/sign-in-url',(req, res) => {
   if (!res.locals.auth || !res.locals.userId) {
     res.send(GoogleRedirectURL);
+    return;
   }
   res.send("/app");
  
@@ -477,7 +478,7 @@ app.get('/oauth2callback', ash(async (req, res) => { //not part of api
 app.post('/sign-out', ash(async (req, res) => {
   res.clearCookie('refreshToken');
   res.clearCookie('userId');
-  res.status(200).send("Sucess!");
+  res.send('Success!');
 }))
 
 app.get('/has-signed-in',ash(async (req,res) => {
