@@ -44,9 +44,7 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL: process.env.NODE_ENV === 'production' ? 'https://agendacl.herokuapp.com/' : 'https://localhost:3000' // Used as fallback if no runtime config is provided
-  },
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   uild: {},
