@@ -89,10 +89,8 @@ return new Promise<{GURL: string, auth: Auth.OAuth2Client}>(async (res, rej) => 
 function retrieveToken(code: string) {
   return new Promise<{userId: string, refreshToken: string, auth: Auth.OAuth2Client}>(async (res, rej) => {
     let authInstance = authClient;
-    console.log(code);
     const {tokens} = await authInstance.getToken(code);
     authInstance.setCredentials(tokens);
-    console.log(authInstance);
     let userId = await getUserId(authInstance);
     res({userId, refreshToken: tokens.refresh_token!, auth: authInstance});
   })
@@ -454,7 +452,6 @@ app.use(async (req, res, next) => {
   }
   let refreshToken = req.signedCookies.refreshToken!;
   let authInstance = authClient;
-  console.log(GoogleRedirectURL);
   authInstance.setCredentials({refresh_token: refreshToken});
   res.locals.auth = authInstance;
   res.locals.userId = req.signedCookies.userId;

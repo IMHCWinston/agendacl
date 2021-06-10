@@ -79,10 +79,8 @@ function init() {
 function retrieveToken(code) {
     return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
         let authInstance = authClient;
-        console.log(code);
         const { tokens } = yield authInstance.getToken(code);
         authInstance.setCredentials(tokens);
-        console.log(authInstance);
         let userId = yield getUserId(authInstance);
         res({ userId, refreshToken: tokens.refresh_token, auth: authInstance });
     }));
@@ -421,7 +419,6 @@ app.use((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     }
     let refreshToken = req.signedCookies.refreshToken;
     let authInstance = authClient;
-    console.log(GoogleRedirectURL);
     authInstance.setCredentials({ refresh_token: refreshToken });
     res.locals.auth = authInstance;
     res.locals.userId = req.signedCookies.userId;
