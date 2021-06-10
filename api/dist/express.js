@@ -42,7 +42,6 @@ const _ = __importStar(require("lodash"));
 const express_async_handler_1 = __importDefault(require("express-async-handler"));
 const moment_1 = __importDefault(require("moment"));
 const prisma = new client_1.PrismaClient();
-const BASE_URL = process.env.BASE_URL || 'localhost:3000';
 const scopes = [
     'https://www.googleapis.com/auth/classroom.courses.readonly',
     'https://www.googleapis.com/auth/classroom.coursework.me.readonly',

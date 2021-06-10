@@ -10,7 +10,6 @@ import ash from 'express-async-handler';
 import { NextFunction, Request, Response} from 'express';
 import moment from 'moment';
 const prisma = new PrismaClient();
-const BASE_URL = process.env.BASE_URL || 'localhost:3000'
 
 const scopes = [
   'https://www.googleapis.com/auth/classroom.courses.readonly',
