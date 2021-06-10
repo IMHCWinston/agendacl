@@ -54,6 +54,6 @@ export default {
   },
   loading: false,
   env: {
-    baseUrl: process.env.BASE_URL
+    baseUrl: process.env
   }
 }

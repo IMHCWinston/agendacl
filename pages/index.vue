@@ -511,7 +511,7 @@ export default {
     return { url } //url is appended to vue data property
   },
   mounted() {
-    console.log(process.env)
+
   }
 }
 
