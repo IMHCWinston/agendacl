@@ -26,9 +26,11 @@
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn-tooltip>
     <v-spacer />
-    <v-btn-tooltip icon tooltip="Go to Homepage">
-      <v-icon>mdi-home</v-icon>
-    </v-btn-tooltip>
+    <NuxtLink to="/" style="all: initial">
+      <v-btn-tooltip icon tooltip="Go to Homepage">
+        <v-icon>mdi-home</v-icon>
+      </v-btn-tooltip>
+    </NuxtLink>
     <v-btn-tooltip icon tooltip="Log out" @click="redirect">
       <v-icon>mdi-logout</v-icon>
     </v-btn-tooltip>
