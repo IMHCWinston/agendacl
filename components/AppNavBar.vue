@@ -88,8 +88,8 @@ export default {
       return moment();
     },
     async redirect() {
-      this.$nuxt.$router.replace('/');
       await this.$axios.$post('api/sign-out')
+      this.$nuxt.$router.replace('/');
     },
     computeWeek() {
       let setDate = moment(this.date, 'YYYY-MM-DD').day(7)
