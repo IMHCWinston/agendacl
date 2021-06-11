@@ -58,12 +58,13 @@ const ROOT_DIR = path_1.default.resolve(__dirname, "../../client/dist");
 function init() {
     return new Promise((res, rej) => __awaiter(this, void 0, void 0, function* () {
         fs_1.default.readFile('api/credentials.json', (err, content) => __awaiter(this, void 0, void 0, function* () {
+            var _a;
             if (err)
                 return console.error('Error loading client secret file:', err);
-            const uriIndex = process.env.NODE_ENV == 'production' ? 2 : 1;
             let credentials = JSON.parse(content.toString());
             const { client_secret, client_id, redirect_uris } = credentials.web;
-            const oauth2Client = new googleapis_1.google.auth.OAuth2(client_id, client_secret, redirect_uris[uriIndex]);
+            const redirectURI = process.env.NODE_ENV == 'production' ? (_a = process.env.BASE_URL) === null || _a === void 0 ? void 0 : _a.concat('api/oauth2callback') : 'http://localhost:3000/api/oauth2callback';
+            const oauth2Client = new googleapis_1.google.auth.OAuth2(client_id, client_secret, redirectURI);
             const url = oauth2Client.generateAuthUrl({
                 // 'online' (default) or 'offline' (gets refresh_token)
                 access_type: 'offline',
