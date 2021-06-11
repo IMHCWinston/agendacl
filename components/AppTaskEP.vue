@@ -49,7 +49,7 @@
       </template>
     </v-expansion-panel-header>
     <v-expansion-panel-content>
-      <p class=" my-0 px-0 caption">
+      <p class=" my-0 px-0 subtitle-2">
         Description
       </p>
       <v-row no-gutters>
