@@ -3,49 +3,37 @@
     <v-expansion-panel-header class="py-1">
       <v-list class="ma-0 pa-0" max-width="90%">
         <v-list-item class="ma-0 pa-0">
-          <v-row no-gutters class="ma-0 pa-0">
-            <v-col cols="10">
-              <v-list-item-content>
-                <v-list-item-subtitle :class="listItemTitleProp">
-                  {{ label }}
-                </v-list-item-subtitle>
-                <v-list-item-title class="body-2" :class="listItemTitleProp">
-                  <div class="text-truncate">
-                    {{ task.title }}
-                  </div>
-                </v-list-item-title>
-                <v-list-item-subtitle>
-                  <span :class="listItemTitleProp">
-                    {{ dueTime }}
-                  </span>
-                  <v-btn-tooltip v-if="task.isClassroomCourseWork" tooltip="See GC Assignment" icon x-small :target="targetRedirect" :href="task.courseWorkLink" class-btn="ml-1 " @click.stop>
-                    <v-icon>mdi-google-classroom</v-icon>
-                  </v-btn-tooltip>
-                </v-list-item-subtitle>
-              </v-list-item-content>
-            </v-col>
-            <v-col cols="2" align-self="center">
-              <v-row no-gutters justify="end">
-                <v-col cols="6">
-                  <v-btn-tooltip tooltip="Edit" icon small class-btn="col-1" @click.stop="editBtnClick">
-                    <!--With data parameters later-->
-                    <v-icon>mdi-pencil</v-icon>
-                  </v-btn-tooltip>
-                </v-col>
-                <v-col cols="6">
-                  <v-btn-tooltip :tooltip="!EPDisabled ? 'Mark As Done': 'Mark As Not Done'" icon small class-btn="col-1 ml-1" @click.stop="markAsDoneBtnClick">
-                    <v-icon>{{ markAsDoneIconName }}</v-icon>
-                  </v-btn-tooltip>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
+          <v-list-item-content>
+            <v-list-item-subtitle :class="listItemTitleProp">
+              {{ label }}
+            </v-list-item-subtitle>
+            <v-list-item-title class="body-2" :class="listItemTitleProp">
+              <div class="text-truncate">
+                {{ task.title }}
+              </div>
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              <span :class="listItemTitleProp">
+                {{ dueTime }}
+              </span>
+              <v-btn-tooltip v-if="task.isClassroomCourseWork" tooltip="See GC Assignment" icon x-small :target="targetRedirect" :href="task.courseWorkLink" class-btn="ml-1 " @click.stop>
+                <v-icon>mdi-google-classroom</v-icon>
+              </v-btn-tooltip>
+            </v-list-item-subtitle>
+          </v-list-item-content>
         </v-list-item>
       </v-list>
       <template #actions>
-        <v-icon>
-          mdi-chevron-down
-        </v-icon>
+        <v-list class="ma-0 pa-0">
+          <v-list-item class="ma-0 pa-0">
+            <v-list-item-content class="pt-4">
+              <v-list-item-subtitle class="text-center ma-0 pa-0" />
+              <v-icon>
+                mdi-chevron-down
+              </v-icon>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
       </template>
     </v-expansion-panel-header>
     <v-expansion-panel-content>
@@ -53,20 +41,31 @@
         Description
       </p>
       <v-row no-gutters>
-        <v-col class="text-truncate py-0 pl-0 caption" cols="12" style="user-select: none; cursor: pointer" @click="showDescDialog=true">
+        <v-col class="text-truncate py-0 pl-0 " cols="10" style="user-select: none; cursor: pointer" @click="showDescDialog=true">
           {{ task.description ? task.description : task.isClassroomCourseWork ? task.courseWorkDescription : '' }}
         </v-col>
+        <v-col cols="1">
+          <v-btn-tooltip tooltip="Edit" icon small class-btn="col-1" @click="editBtnClick">
+            <!--With data parameters later-->
+            <v-icon>mdi-pencil</v-icon>
+          </v-btn-tooltip>
+        </v-col>
+        <v-col cols="1">
+          <v-btn-tooltip :tooltip="!EPDisabled ? 'Mark As Done': 'Mark As Not Done'" icon small class-btn="col-1 ml-1" @click.stop="markAsDoneBtnClick">
+            <v-icon>{{ markAsDoneIconName }}</v-icon>
+          </v-btn-tooltip>
+        </v-col>
       </v-row>
+      <AppTaskEPEditDialog
+        v-model="showEditDialog"
+        :task="task"
+        @closeEditDialog="showEditDialog=false"
+      />
+      <AppTaskEPDescDialog
+        v-model="showDescDialog"
+        :task="task"
+      />
     </v-expansion-panel-content>
-    <AppTaskEPEditDialog
-      v-model="showEditDialog"
-      :task="task"
-      @closeEditDialog="showEditDialog=false"
-    />
-    <AppTaskEPDescDialog
-      v-model="showDescDialog"
-      :task="task"
-    />
   </v-expansion-panel>
 </template>
 
