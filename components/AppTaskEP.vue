@@ -1,9 +1,9 @@
 <template>
   <v-expansion-panel v-show="task.isDeleted === false">
     <v-expansion-panel-header class="py-1">
-      <v-list class="ma-0 pa-0" max-width="90%">
-        <v-list-item class="ma-0 pa-0">
-          <v-row no-gutters class="ma-0 pa-0">
+      <v-list class="ma-0 pa-0" max-width="95%">
+        <v-list-item class="ma-0 pa-0" style="max-width: 98%">
+          <v-row no-gutters class="ma-0 pa-0" style="max-width: 100%">
             <v-col cols="10">
               <v-list-item-content>
                 <v-list-item-subtitle :class="listItemTitleProp">
