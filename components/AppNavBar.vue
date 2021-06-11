@@ -27,7 +27,7 @@
     </v-btn-tooltip>
     <v-spacer />
     <NuxtLink to="/" style="all: initial">
-      <v-btn-tooltip icon tooltip="Go to Homepage">
+      <v-btn-tooltip icon tooltip="Home">
         <v-icon>mdi-home</v-icon>
       </v-btn-tooltip>
     </NuxtLink>
