@@ -4,7 +4,7 @@
       <div class="d-flex flex-column" style="max-height: inherit">
         <v-card-title>View Tasks</v-card-title>
         <v-divider />
-        <div class="flex-grow-1 light-scrollbar" style="overflow-y: auto">
+        <div class="flex-grow-1" style="overflow-y: auto">
           <v-expansion-panels accordion>
             <!--Ideally use v-for-->
             <AppTaskEP
