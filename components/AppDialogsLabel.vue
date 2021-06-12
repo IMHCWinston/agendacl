@@ -4,7 +4,7 @@
       <div class="d-flex flex-column" style="max-height: inherit">
         <v-card-title>Manage Labels</v-card-title>
         <v-divider />
-        <div class="flex-grow-1 light-scrollbar" style="overflow-y: auto">
+        <div class="flex-grow-1" style="overflow-y: auto">
           <v-list class="pa-0">
             <v-card>
               <v-list-item>

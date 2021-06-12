@@ -7,7 +7,7 @@
         {{ day.format('D') }}
       </v-card-title>
       <v-divider />
-      <div class="flex-grow-1 overflow-y-auto light-scrollbar" style="overflow-x: hidden">
+      <div class="flex-grow-1 overflow-y-auto" style="overflow-x: hidden">
         <v-expansion-panels v-model="panels" accordion>
           <AppTaskEP
             v-for="task in tasks"

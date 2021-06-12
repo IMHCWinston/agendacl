@@ -482,7 +482,5 @@ export default {
 </script>
 
 <style scoped src="@/assets/css/home.css">
-html {
-  scroll-behavior: smooth;
-}
+
 </style>
