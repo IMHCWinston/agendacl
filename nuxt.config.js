@@ -51,7 +51,7 @@ export default {
   serverMiddleware: {
     '/api': '~/api/dist/express.js'
   },
-  loading: false,
+  loading: '~/components/Loading.vue',
   env: {
     baseURL: process.env.BASE_URL
   }

@@ -26,7 +26,6 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
-
   data: () => ({
     //Auth
     signedIn: false,
