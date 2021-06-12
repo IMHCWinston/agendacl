@@ -10,6 +10,7 @@
     </v-layout>
     <AppDialogsLabel :value="dialogLabel" @input="dialogLabel=$event" />
     <AppDialogsCreate :value="dialogCreate" @input="dialogCreate=$event" />
+    <v-alert v-if="$nuxt.isOffline" type="warning" style="position: fixed; width: 75vw; bottom: 0; left: 12vw; z-index: 100">You are offline</v-alert>
   </v-footer>
 </template>
 

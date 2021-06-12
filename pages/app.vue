@@ -26,7 +26,6 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
-
   data: () => ({
     //Auth
     signedIn: false,
@@ -99,19 +98,3 @@ export default {
 };
 
 </script>
-
-<style>
-html {
-  overflow-y:auto
-}
-
-.light-scrollbar::-webkit-scrollbar {
-  width: 8px;
-}
-
-.light-scrollbar::-webkit-scrollbar-thumb {
-  background: #b0b0b0;
-  border-radius: 7px;
-}
-
-</style>
