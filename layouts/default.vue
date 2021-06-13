@@ -30,8 +30,12 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-y:auto;
-  scrollbar-width: thin;
 }
+
+* {
+    scrollbar-width: thin;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
