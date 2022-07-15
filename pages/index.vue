@@ -206,7 +206,6 @@
           <p class="title">User Manual</p>
           <h3 class="heading-primary head2">
             Easy to understand
-            <span class="text-span">unlike women</span>
           </h3>
         </div>
       </div>
